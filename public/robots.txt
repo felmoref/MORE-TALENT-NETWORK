@@ -1,0 +1,3 @@
+# robots.txt for MORE TALENT NETWORK
+User-agent: *
+Allow: /

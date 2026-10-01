@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  html {
+    font-family: var(--font-sans);
+    color-scheme: light;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Custom subtle animations */
+@keyframes subtle-pulse {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.05); }
+}
+
+.animate-subtle-pulse {
+  animation: subtle-pulse 6s ease-in-out infinite;
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+}
+
+.animate-float {
+  animation: float-slow 4s ease-in-out infinite;
+}
